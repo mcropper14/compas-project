@@ -32,8 +32,8 @@ Note that run_all.py clears results.csv first.
 | `methods/ensembles.py` | 5 classifier families, majority/soft/weighted voting, each with and without reweighting |
 | `methods/fair_lr.py` | PyTorch LR with BCE + λ·\|ΔFPR\|, the λ sweep and the Fairlearn ExpGrad reference |
 | `methods/dro.py` | Group DRO over race × sex groups + λ penalty, with η and λ chosen on validation |
-| `methods/group_thresholds.py` | | Plain LR with one threshold per race (uses race at decision time) |
-| `robustness.py` | | Ten seeds, 95% CIs, paired differences from the baseline; rates by race, sex gaps, ablations, cap and tolerance sensitivity |
+| `methods/group_thresholds.py` | Plain LR with one threshold per race (uses race at decision time) |
+| `robustness.py` | Ten seeds, 95% CIs, paired differences from the baseline; rates by race, sex gaps, ablations, cap and tolerance sensitivity |
 | `run_all.py`, `figures.py` | Run everything, write the summary tables and draw the figures |
 
 All methods record into `results/results.csv`, one row per (method, split, config).
