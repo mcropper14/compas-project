@@ -24,7 +24,7 @@ Note that run_all.py clears results.csv first.
 ## Layout
 
 | File | What it does |
-|---|---|---|
+|---|---|
 | `data.py` | The only preprocessing. Applies ProPublica's filters, fixes the splits and builds the features. `load_splits()` |
 | `eval.py` | `evaluate(model, split)`, the λ-selection rule `select()` and the shared results table `record()` |
 | `methods/baseline.py` | LR with and without race, the COMPAS decile comparison and the proxy check |
